@@ -2,10 +2,10 @@ document.querySelector('.btn').addEventListener('click', function t1() {
   let  out = document.querySelector('.out')
  
    for (let i = 0; i < 3; i++) {
+    out.innerHTML += '-';
       for (let k = 0; k < 3; k++) {
         out.innerHTML += '*';
       }
-     out.innerHTML += '-';
    }
 })
 
@@ -15,10 +15,21 @@ document.querySelector('.btn2').addEventListener('click', function t2() {
 
   for (let i = 1; i <= 3; i++) {
     out.innerHTML += i + "<br>";
-    for (let k = 0; k < 10; k++) {
+    for (let k = 0; k < 3; k++) {
       out.innerHTML += '*_';
     }
     out.innerHTML += '<br>';
   }
 })
 
+document.querySelector('.btn3').addEventListener('click', function t3() {
+  let out = document.querySelector('.out-3')
+
+  for (let i = 0; i <= 3; i++) {
+    out.innerHTML += '<br>';
+    for (let k = 0; k < 3; k++) {
+     out.innerHTML += "*_";
+    }
+    
+  }
+})
