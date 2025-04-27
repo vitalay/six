@@ -107,3 +107,17 @@ document.querySelector('.btn9').addEventListener('click', function t9() {
     }
   }
 }) 
+
+document.querySelector('.btn10').addEventListener('click', function t10() {
+  let out = document.querySelector('.out-10')
+
+  for (let i = 0; i < 50; i += 10) {
+     out.innerHTML += '<br>';
+    for (let j = 1; j <= 10; j++) {
+      const num = i + j;
+      out.innerHTML += `${num < 10 ? '0' : ''}${num}`;
+     out.innerHTML += ' ';
+    }
+   
+  }
+})
