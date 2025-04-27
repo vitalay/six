@@ -43,4 +43,13 @@ document.querySelector('.btn4').addEventListener('click', function t4() {
     }
   }
 })
+document.querySelector('.btn5').addEventListener('click', function t5() {
+  let out = document.querySelector('.out-5')
 
+  for (let i = 1; i <= 3; i++) {
+    out.innerHTML += '<br>';
+    for (let k = 0; k <= 5; k++) {
+      out.innerHTML += k % 2 === 0 ? '1' : '0';
+    }
+  }
+})
