@@ -53,3 +53,23 @@ document.querySelector('.btn5').addEventListener('click', function t5() {
     }
   }
 })
+
+
+document.querySelector('.btn6').addEventListener('click', function t6() {
+  let out = document.querySelector('.out-6')
+
+  for (let i = 0; i < 3; i++) {
+    out.innerHTML += '<br>';
+        for (let j = 0; j < 6; j++) {
+          if (j === 2 || j === 5) {
+            out.innerHTML += 'x';  // x на 3-й и 6-й позициях (индексы 2 и 5)
+          } else if (j % 2 === 0) {
+            out.innerHTML += '1';  // 1 на четных позициях (кроме уже учтенных x)
+          } else {
+            out.innerHTML += '0';  // 0 на нечетных позициях
+          }
+        }
+    }
+  }
+
+)
