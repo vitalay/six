@@ -30,6 +30,17 @@ document.querySelector('.btn3').addEventListener('click', function t3() {
     for (let k = 0; k < 3; k++) {
      out.innerHTML += "*_";
     }
-    
   }
 })
+
+document.querySelector('.btn4').addEventListener('click', function t4() {
+  let out = document.querySelector('.out-4')
+
+  for (let i = 1; i <= 3; i++) {
+    out.innerHTML += i + '_';
+    for (let k = 1; k <= 5; k++) {
+      out.innerHTML += k + ' '; 
+    }
+  }
+})
+
