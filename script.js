@@ -69,7 +69,28 @@ document.querySelector('.btn6').addEventListener('click', function t6() {
             out.innerHTML += '0';  // 0 на нечетных позициях
           }
         }
+     }
+  })
+
+document.querySelector('.btn7').addEventListener('click', function t7() {
+  let out = document.querySelector('.out-7')
+
+  for (let i = 0; i < 5; i++) {
+    out.innerHTML += '<br>';
+       for (let j = 0; j < i; j++) {
+         out.innerHTML += '*';
     }
   }
+}) 
 
-)
+const bt = document.querySelector('.btn8').addEventListener('click', function t8() {
+ 
+  let out = document.querySelector('.out-8')
+  for (let i = 5; i >= 1; i--) {
+    out.innerHTML += '<br>';
+    // Внутренний цикл для звёздочек в строке
+    for (let j = 0; j < i; j++) {
+      out.innerHTML+= '*';
+    }
+  }
+}) 
