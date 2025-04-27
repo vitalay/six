@@ -94,3 +94,16 @@ const bt = document.querySelector('.btn8').addEventListener('click', function t8
     }
   }
 }) 
+
+document.querySelector('.btn9').addEventListener('click', function t9() {
+  let out = document.querySelector('.out-9')
+
+  for (let i = 1; i <= 5; i++) {
+    out.innerHTML += '<br>';
+    // Внутренний цикл для чисел в строке
+    for (let j = 1; j <= i; j++) {
+      out.innerHTML += j + ' ';
+    
+    }
+  }
+}) 
